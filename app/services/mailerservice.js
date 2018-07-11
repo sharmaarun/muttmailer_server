@@ -3,7 +3,7 @@ var coreServices = require("./coreservices");
 const sendMail = (mailOpts) => {
     console.log(mailOpts);
     coreServices.executeCommand({
-        command: "ls",
+        command: "~/mailer/muttmailer_server/app/scripts/email.sh",
         /*arguments: [
             "-s",
             "Your Agreement Is Attached",
