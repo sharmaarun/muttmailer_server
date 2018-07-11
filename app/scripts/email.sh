@@ -1,2 +1,2 @@
 #! /bin/bash
-ls -lrt
+mutt -e "set content_type=text/html" -s "Your Loan Agreement Is Attached" $1 -a ~/$2 < ~/$3
