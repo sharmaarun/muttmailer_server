@@ -1,7 +1,7 @@
 var coreServices = require("./coreservices");
 
 const sendMail = (mailOpts) => {
-
+    console.log(mailOpts);
     coreServices.executeCommand({
         command: "mutt",
         arguments: [
