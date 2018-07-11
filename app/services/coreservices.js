@@ -25,7 +25,7 @@ const executeCommand = (opts) => {
         });
 
         child.on('close', (code) => {
-            //console.log(commandOutput + "\n==================\nCode: " + code);
+            console.log(commandOutput + "\n==================\nCode: " + code);
             resolve({ commandOutput, code });
         });
     });
