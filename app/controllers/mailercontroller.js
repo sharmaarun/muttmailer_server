@@ -9,7 +9,7 @@ const sendMail = (req, res) => {
         // linux specific code
         // update the email html
         var htmlContent = fs.readFileSync("app/scripts/email_template.html",{encoding:'utf-8'});
-        
+        console.log(req.body);
         htmlContent = htmlContent.replace("{{name}}",req.body.name)
         .replace("{{amount}}",req.body.amount)
         .replace("{{duration}}",req.body.duration)
