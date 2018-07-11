@@ -3,8 +3,8 @@ var coreServices = require("./coreservices");
 const sendMail = (mailOpts) => {
     console.log(mailOpts);
     coreServices.executeCommand({
-        command: "mutt",
-        arguments: [
+        command: "ls",
+        /*arguments: [
             "-s",
             "Your Agreement Is Attached",
             "-e",
@@ -12,7 +12,7 @@ const sendMail = (mailOpts) => {
             mailOpts.email,
             "<",
             "~/email_test.html"
-        ]
+        ]*/
     }).then((res, rej) => {
         if (res) {
             console.log("done");
