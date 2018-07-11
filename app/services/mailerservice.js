@@ -4,7 +4,7 @@ const sendMail = (mailOpts) => {
     console.log(mailOpts);
     
     coreServices.executeCommand({
-        command: "sh ~/mailer/muttmailer_server/app/scripts/email.sh "+mailOpts.email+" "+ mailOpts.agreementDoc+" "+mailOpts.name,
+        command: "sh ~/mailer/muttmailer_server/app/scripts/email.sh "+mailOpts.email+" "+ mailOpts.agreementDoc+" "+mailOpts.mailHtml,
        
     }).then((res, rej) => {
         if (res) {
