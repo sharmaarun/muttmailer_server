@@ -10,6 +10,7 @@ const executeCommand = (opts) => {
                     reject(err);
                     return;
                 }
+                console.log(stdo);
                 resolve(stdo);
             });
         })
